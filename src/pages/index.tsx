@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 import { Banner } from '../components/Banner/Index';
 import { Header } from '../components/Header';
+import { Slider } from '../components/Slider/index';
 import { TravelTypes } from '../components/TravelTypes';
 
 const Home: NextPage = () => {
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <Banner />
       </Flex>
       <TravelTypes />
+      <Slider />
     </Flex>
   );
 };

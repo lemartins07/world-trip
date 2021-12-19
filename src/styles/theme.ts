@@ -13,6 +13,9 @@ export const theme = extendTheme({
       '400': '#FFBA08',
       '300': 'rgba(255, 186, 8,0.5)',
     },
+    black: {
+      '200': 'rgba(0, 0, 0, 0.3)',
+    },
   },
   fonts: {
     heading: 'Poppins',

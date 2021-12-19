@@ -9,7 +9,7 @@ export const TravelTypes: React.FC = () => {
       maxWidth="1160px"
       mx="auto"
       paddingTop="28"
-      paddingBottom="20px"
+      paddingBottom="14"
       justifyContent="space-between"
     >
       <Card image="/images/cocktail.svg" text="vida noturna" />
