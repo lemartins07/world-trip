@@ -1,32 +1,48 @@
-import { Divider, Flex, Heading, Image } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { SwiperSlider } from './SwiperSlider';
+import { SlideContent } from './SlideContent';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination]);
 
 export function Slider() {
   return (
     <Flex
-      direction="column"
-      maxWidth="1240px"
+      w="100%"
+      h={['250px', '450px']}
+      maxW="1240px"
       mx="auto"
-      py="10"
-      alignItems="center"
+      mb={['5', '10']}
     >
-      <Divider
-        borderBottomWidth={2}
-        width="90px"
-        borderColor="gray.700"
-        my="6"
-      />
-      <Heading
-        fontWeight="normal"
-        textAlign="center"
-        lineHeight="3.75rem"
-        my="6"
-      >
-        Vamos nessa? <br /> Então escolha seu continente
-      </Heading>
-
-      <SwiperSlider />
+      <Swiper navigation={true} pagination={true} className="mySwiper">
+        <SwiperSlide>
+          <SlideContent
+            image="/images/africa.jpg"
+            title="África"
+            subtitle="o continente mais quente"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SlideContent
+            image="/images/asia.jpg"
+            title="Ásia"
+            subtitle="o maior continente"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SlideContent
+            image="/images/europe.jpg"
+            title="Europa"
+            subtitle="o continente mais antigo"
+          />
+        </SwiperSlide>
+      </Swiper>
     </Flex>
   );
 }

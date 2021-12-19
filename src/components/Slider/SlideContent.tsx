@@ -10,11 +10,10 @@ export function SlideContent({ title, subtitle, image }: SlideContentProps) {
   return (
     <Flex
       w="100%"
+      h="100%"
       bgImage={`url(${image})`}
       backgroundPosition="center"
       backgroundSize="cover"
-      maxHeight="450px"
-      height="450px"
       direction="column"
     >
       <VStack
@@ -25,10 +24,20 @@ export function SlideContent({ title, subtitle, image }: SlideContentProps) {
         alignItems="center"
         justifyContent="center"
       >
-        <Heading color="gray.100" fontSize="5xl">
+        <Heading
+          color="gray.100"
+          fontSize={['3xl', '4xl', '5xl']}
+          fontWeight="bold"
+        >
           {title}
         </Heading>
-        <Heading as="h2" fontSize="2xl" color="gray.300">
+        <Heading
+          as="h2"
+          fontSize={['0.8rem', '1xl', '2xl']}
+          mt={['2', '4']}
+          color="gray.300"
+          fontWeight="bold"
+        >
           {subtitle}
         </Heading>
       </VStack>

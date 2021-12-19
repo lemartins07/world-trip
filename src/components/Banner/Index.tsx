@@ -8,7 +8,6 @@ export function Banner() {
       bgImage="url(/images/Background.png)"
       backgroundPosition="center"
       backgroundSize="cover"
-      bgSize="no-repeat"
     >
       <Flex
         w="100%"
