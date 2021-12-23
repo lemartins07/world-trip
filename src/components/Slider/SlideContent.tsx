@@ -1,12 +1,19 @@
-import { Flex, Heading, VStack } from '@chakra-ui/react';
+import { Flex, Heading, VStack, Link } from '@chakra-ui/react';
+import NextLink from 'next/link';
 
 interface SlideContentProps {
   title: string;
   subtitle: string;
   image: string;
+  url: string;
 }
 
-export function SlideContent({ title, subtitle, image }: SlideContentProps) {
+export function SlideContent({
+  title,
+  subtitle,
+  image,
+  url,
+}: SlideContentProps) {
   return (
     <Flex
       w="100%"
@@ -24,22 +31,26 @@ export function SlideContent({ title, subtitle, image }: SlideContentProps) {
         alignItems="center"
         justifyContent="center"
       >
-        <Heading
-          color="gray.100"
-          fontSize={['3xl', '4xl', '5xl']}
-          fontWeight="bold"
-        >
-          {title}
-        </Heading>
-        <Heading
-          as="h2"
-          fontSize={['0.8rem', '1xl', '2xl']}
-          mt={['2', '4']}
-          color="gray.300"
-          fontWeight="bold"
-        >
-          {subtitle}
-        </Heading>
+        <NextLink href={`/continent/${url}`} passHref>
+          <Link align="center" _hover={{ textDecoration: 'none' }}>
+            <Heading
+              color="gray.100"
+              fontSize={['3xl', '4xl', '5xl']}
+              fontWeight="bold"
+            >
+              {title}
+            </Heading>
+            <Heading
+              as="h2"
+              fontSize={['0.8rem', '1xl', '2xl']}
+              mt={['2', '4']}
+              color="gray.300"
+              fontWeight="bold"
+            >
+              {subtitle}
+            </Heading>
+          </Link>
+        </NextLink>
       </VStack>
     </Flex>
   );

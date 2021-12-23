@@ -26,6 +26,7 @@ export function Slider() {
             image="/images/africa.jpg"
             title="África"
             subtitle="o continente mais quente"
+            url="africa"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -33,6 +34,7 @@ export function Slider() {
             image="/images/asia.jpg"
             title="Ásia"
             subtitle="o maior continente"
+            url="asia"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -40,6 +42,7 @@ export function Slider() {
             image="/images/europe.jpg"
             title="Europa"
             subtitle="o continente mais antigo"
+            url="europe"
           />
         </SwiperSlide>
       </Swiper>
