@@ -13,9 +13,10 @@ export function ContinentBanner() {
         align={['center', 'center', 'center', 'flex-end']}
         justifyContent={['center', 'center', 'center', 'flex-start']}
         py={['', '14']}
-        px={['', '36']}
         maxW="1160px"
         w="100%"
+        mx="auto"
+        px="4"
       >
         <Heading
           color="gray.100"
