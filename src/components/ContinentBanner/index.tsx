@@ -4,7 +4,7 @@ export function ContinentBanner() {
   return (
     <Flex
       w="100%"
-      h={['163px', '250px', '250px', '335px']}
+      h={['150px', '300px', '500px']}
       bgImage="url(/images/africa.jpg)"
       backgroundPosition="center"
       backgroundSize="cover"

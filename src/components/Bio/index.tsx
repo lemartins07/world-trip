@@ -41,7 +41,7 @@ export function Bio() {
           >
             50
           </Heading>
-          <Text fontSize="2xl" color="gray.700" fontWeight="600">
+          <Text fontSize={['md', 'xl']} color="gray.700" fontWeight="600">
             países
           </Text>
         </Flex>
@@ -53,7 +53,7 @@ export function Bio() {
           >
             60
           </Heading>
-          <Text fontSize="2xl" color="gray.700" fontWeight="600">
+          <Text fontSize={['md', 'xl']} color="gray.700" fontWeight="600">
             línguas
           </Text>
         </Flex>
@@ -65,7 +65,7 @@ export function Bio() {
           >
             27
           </Heading>
-          <Text fontSize="2xl" color="gray.700" fontWeight="600">
+          <Text fontSize={['md', 'xl']} color="gray.700" fontWeight="600">
             cidades +100
             <Popover>
               <PopoverTrigger>
